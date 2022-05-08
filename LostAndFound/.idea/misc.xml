@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Charlie/436Final/Lost-and-Found/LostAndFound/app/src/main/res/layout/activity_itemadapter.xml" value="0.1265625" />
+        <entry key="..\:/Users/Charlie/436Final/Lost-and-Found/LostAndFound/app/src/main/res/layout/activity_lostitemlist.xml" value="0.1265625" />
         <entry key="..\:/Users/Vineeth Vemuri/AndroidStudioProjects/LostAndFound/app/src/main/res/drawable/ic_baseline_cancel_24.xml" value="0.2895" />
         <entry key="..\:/Users/Vineeth Vemuri/AndroidStudioProjects/LostAndFound/app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.2895" />
         <entry key="..\:/Users/Vineeth Vemuri/AndroidStudioProjects/LostAndFound/app/src/main/res/layout/activity_additem.xml" value="0.17552083333333332" />

@@ -1,6 +1,7 @@
 package com.example.lostandfound
 
 import android.content.Context
+import android.content.SharedPreferences
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 
-class AddItemAdapter(mContext: Context): RecyclerView.Adapter<AddItemAdapter.ViewHolder>() {
+class AddItemAdapter(mContext: Context,sharedPreferences: SharedPreferences): RecyclerView.Adapter<AddItemAdapter.ViewHolder>() {
 
     var context = mContext
     //var lostItem = item
