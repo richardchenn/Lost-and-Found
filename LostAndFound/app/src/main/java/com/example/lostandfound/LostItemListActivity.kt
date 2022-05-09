@@ -11,6 +11,7 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -41,6 +42,7 @@ class LostItemListActivity: AppCompatActivity() {
 
         recycler.layoutManager = linearLayoutManager
         recycler.adapter = itemAdapter
+        ViewCompat.setNestedScrollingEnabled(recycler, false)
 
         loadShared()
         lostItemBtn.setOnClickListener {
@@ -72,8 +74,8 @@ class LostItemListActivity: AppCompatActivity() {
             if (result.resultCode == Activity.RESULT_OK){
                 val data: Intent? = result.data
                 item = data?.extras!!.get("item").toString()
-                date = data?.extras!!.get("date").toString()
                 description = data?.extras!!.get("description").toString()
+                date = data?.extras!!.get("date").toString()
 
                 itemAdapter.add(LostItem(item, date, description))
                 editor.apply {

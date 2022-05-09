@@ -73,7 +73,7 @@ class AddItemActivity: AppCompatActivity() {
             val itemName = itemName.text.toString()
             val itemDate = dateView.text.toString()
             val itemDesc = description.text.toString()
-            LostItem.packageIntent(intent, itemName, itemDate, itemDesc)
+            LostItem.packageIntent(intent, itemName, itemDesc, itemDate)
             setResult(Activity.RESULT_OK, intent)
             finish()
 

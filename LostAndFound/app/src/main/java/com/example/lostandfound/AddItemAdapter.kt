@@ -36,16 +36,17 @@ class AddItemAdapter(mContext: Context,sharedPreferences: SharedPreferences): Re
             val lostItemTemp = mItems[position]
 
             holder.mItemView!!.text = lostItemTemp.item
-            holder.mDateView!!.text = lostItemTemp.date
             holder.mDescView!!.text = lostItemTemp.desc
+            holder.mDateView!!.text = lostItemTemp.date
 
     }
 
     class ViewHolder internal constructor(v: View) : RecyclerView.ViewHolder(v) {
 
         var mItemView: TextView? = itemView.findViewById(R.id.displayItemTitle)
-        var mDateView: TextView? = itemView.findViewById(R.id.displayDate)
         var mDescView: TextView? = itemView.findViewById(R.id.displayDescription)
+        var mDateView: TextView? = itemView.findViewById(R.id.displayDate)
+
 
     }
 
