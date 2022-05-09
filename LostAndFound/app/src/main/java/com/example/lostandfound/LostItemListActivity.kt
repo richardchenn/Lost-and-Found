@@ -60,7 +60,7 @@ class LostItemListActivity: AppCompatActivity() {
 //                var description = temp[1]
 //                var date = temp[2]
                 itemAdapter.add(LostItem(temp[0], temp[1], temp[2]))
-                Toast.makeText(applicationContext, "The item is: $temp", Toast.LENGTH_SHORT).show()
+//                Toast.makeText(applicationContext, "The item is: $temp", Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -77,7 +77,7 @@ class LostItemListActivity: AppCompatActivity() {
                 description = data?.extras!!.get("description").toString()
                 date = data?.extras!!.get("date").toString()
 
-                itemAdapter.add(LostItem(item, date, description))
+                itemAdapter.add(LostItem(item, description, date))
                 editor.apply {
                     putString(date, "$item,$description,$date")
                     apply()
